@@ -1,9 +1,13 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Homepage from './Pages/Homepage';
 
 function App() {
   return (
-    <div className="App">
-      hello, Edtech
+    <div>
+      <Routes>
+        <Route path='/' element={<Homepage/>}></Route>
+      </Routes>
     </div>
   );
 }

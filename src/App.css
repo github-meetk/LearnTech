@@ -1,38 +1,205 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  background-color: #000d17;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.spacer {
+  height: 100vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.section1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+  /* background-color: #011627; */
+}
+
+.s1intro {
+  user-select: none;
+  gap: 20px;
+  width:80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+} 
+
+.s1button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  border-radius: 20px;
+  border: 2px solid rgba(54, 66, 83, 0.396);
+  background-color: rgba(54, 66, 83, 0.396);
+  color: #ffffff;
+  padding: 10px 40px;
+  font-weight: 600;
+  margin-top: 70px;
+}
+
+.s1button:hover{
+  background-color: #000d17;
+}
+
+.s1head {
+  margin: 20px 0px;
+  color: #ffffff;
+  font-size:large;
+}
+
+.highlightedText {
+  color: aqua;
+}
+
+.s1paragraph {
+  display: flex;
+  justify-content: center;
+}
+
+.s1para {
+  width: 95%;
+  font-weight: 700;
+  font-size: larger;
+  color: rgb(115, 121, 126);
+  line-height: 30px;
+}
+
+
+.s1buttons {
+  display: flex;
+  margin: 20px 0px;
+  gap: 30px;
+}
+
+.yellowbutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: medium;
+  width: fit-content;
+  font-weight: 600;
+  min-width: 150px;
+  height: 50px;
+  border: none;
+  color: black;
+  background-color: rgb(255, 225, 0);
+  border-radius: 10px;
+  transition: 0.2s ease-out;
+  box-shadow: 0px 0px 5px 2px rgba(54, 66, 83, 0.396);
+}
+
+.yellowbutton:hover {
+  color: rgb(255, 225, 0);
+  background-color: black;
+}
+
+.blackbutton {
+  font-size: medium;
+  font-weight: 600;
+  width: fit-content;
+  min-width: 150px;
+  height: 50px;
+  border: none;
   color: white;
+  background-color: rgba(54, 66, 83, 0.396);
+  border-radius: 10px;
+  transition: 0.2s ease-out;
+  box-shadow: 0px 0px 5px 2px rgba(54, 66, 83, 0.396);
 }
 
-.App-link {
-  color: #61dafb;
+.blackbutton:hover {
+  color: black;
+  background-color: rgb(255, 255, 255);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.video{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+video {
+  box-shadow: 18px 18px 1px 1px white;
+  width: 100%;
+}
+
+.codeblock {
+  user-select: none;
+  margin-block: 100px;
+  width: 80%;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.codeblockreverse {
+  user-select: none;
+  margin-block: 100px;
+  width: 80%;
+  height: max-content;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.cbleft {
+  width:55%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.cbhead {
+  color: white;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.cbpara {
+  color: rgb(115, 121, 126);
+  font-size: medium;
+  font-weight: 600;
+}
+
+.cbbuttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 40px;
+}
+
+.cbright {
+  display: flex;
+  width: 40%;
+  gap: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 10px rgb(59, 226, 255);
+}
+
+.cbno {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  color: rgb(83, 244, 68);
+}
+
+.typingblock {
+  padding: 15px;
+  color: rgb(83, 244, 68);
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
 }
